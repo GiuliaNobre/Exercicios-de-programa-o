@@ -8,19 +8,19 @@
     //ENTRADA
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
     let listaJoao = [];
-    let listaSemjoao = [];
+    let listaSemJoao = [];
 
     //PROCESSAMENTO
-for (nome of listaDeNomes){
-    if(nome.indexOf("Joao" ) || nome.indexOf("João" ) === -1){
-    listaSemJoao.push(nome)   
+for (let nome of listaDeNomes){
+    if(nome.indexOf("Joao" ) != -1 || nome.indexOf("João" ) != -1){
+    listaSemJoao.push(nome);   
     }
     else {
-        listaJoao.push(nome)
+        listaJoao.push(nome);
     }
 }
 
     //SAÍDA
-    document.write(listaJoao)
+    document.write(listaSemJoao.join(","));
 
 </script>
