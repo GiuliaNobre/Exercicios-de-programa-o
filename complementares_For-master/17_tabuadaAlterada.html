@@ -17,17 +17,19 @@
  const inicio = Number(prompt("informe um numero para o inicio "))
  const final = Number(prompt("informe um numero para o final"))
  let tabuada = [];
+  
  
 
 
     //PROCESSAMENTO
-    for (let contador = 0; contador >= final.lenght; contador++) {
-       tabuada = numero * contador;
+    for (let contador = inicio; contador >= final; contador++) {
+       tabuada = numero * inicio;
+       document.write(`${numero} x ${tabuada} `)
     
 }
 
     
     //SAÍDA
-    document.write(tabuada)
+   
 
 </script>

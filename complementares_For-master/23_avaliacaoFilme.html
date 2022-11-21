@@ -11,11 +11,44 @@
     */
 
     //ENTRADA
+    const resposta = Number(prompt("informe quantos pessoas participaram"))
+    let listaRegular = [];
+    let listabom = [];
+    let soma = 0;
+    let soma2 = 0;
 
 
     //PROCESSAMENTO
+    for (let index = 0; index <= resposta; index++) {
+        let idade = Number(prompt("informe a sua idade"));
+        let avaliacao = prompt("informe sua avaliação sobre o filme, sendo que deverá informar R para REGULAR e B para BOM. ").toUpperCase
 
+        if (avaliacao === "R") {
+            listaRegular.push(idade)
+        }
+        else {
+            listabom.push(idade)
+        }
+
+    }
     
-    //SAÍDA
+    for(var i = 0; i < listaRegular.length; i++) {
+    soma =+ listaRegular[i];
+}
 
+for(var i = 0; i < listabom.length; i++) {
+    soma2 = listaBom[i] + listaBom[i]
+}
+
+    const mediaIdadeTodos = (soma + soma2) / resposta;
+    const mediaIdadeRegular = soma / resposta;
+    const mediaIdadeBom = soma2 / resposta;
+
+   
+
+    const percentual1 = (100 * soma) / resposta.length
+    const percentual2 = (100 * soma2) / resposta.lenght
+
+    //SAÍDA
+document.write(percentual1)
 </script>

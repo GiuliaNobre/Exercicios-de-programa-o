@@ -15,28 +15,42 @@
   let listaRomance = [];
   let listaDrama = [];
   let listaComedia = [];
+  
 
   //PROCESSAMENTO
 
   for (let controle = 1; controle <= filmesParaCadastro; controle++) 
-   
+  
    {
     const filme = prompt("informe os filmes");
     let listaFilmes = [];
 
-    let genero = prompt(`informe o genero do filme. Genero drama, coloque (D). Genero comedia, coloque (C). Genero romance coloque (R) ${filme}`);
-    if (genero === "D") {
+    let genero = prompt(`informe o genero do filme. Genero drama, coloque (D). Genero comedia, coloque (C). Genero romance coloque (R) ${filme}`)
+    if ( genero === "D") {
       listaDrama.push(filme) 
     }
-    else if (genero === "C") {
+    else if ( genero === "C") {
       listaComedia.push(filme)
     }
-    else  {
+    else if ( genero === "R"){
        listaRomance.push(filme)
     }
+   
   }
     //SAÍDA
+if(listaRomance.length === 0){
+  document.write(`Genero Drama: ${listaDrama.join(",")} <br> Genero Comedia: ${listaComedia.join(",")}`)
+}
+else if (listaDrama.length === 0){
+  document.write(`Genero Comedia: ${listaComedia.join(",")} <br> Genero Romance: ${listaRomance.join(",")}`)
+}
+else if (listaComedia.length === 0 ){
+  document.write(` Genero Drama: ${listaDrama.join(",")} <br> <br> Genero Romance: ${listaRomance.join(",")}`)
+}
+else {
+  document.write(`Lista de filmes: <br> <br> Genero Drama: ${listaDrama.join(",")} <br> Genero Comedia: ${listaComedia.join(",")} <br> Genero Romance: ${listaRomance.join(",")}`)
 
-   document.write(`Lista de filmes: <br> <br> Genero Drama: ${listaDrama.join(",")} <br> Genero Comedia: ${listaComedia.join(",")} <br> Genero Romance: ${listaRomance.join(",")}`)
+}
 
+   
 </script>

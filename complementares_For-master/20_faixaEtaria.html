@@ -1,57 +1,62 @@
 <script>
-    //PROBLEMA
-    /*
-    Desenvolva um programa que receba a idade de 10 pessoas. Após, calcule e mostre:
-    - A quantidade de pessoas em cada faixa etária
-    - A porcentagem de pessoas em cada faixa etária
+  //PROBLEMA
+  /*
+  Desenvolva um programa que receba a idade de 10 pessoas. Após, calcule e mostre:
+  - A quantidade de pessoas em cada faixa etária
+  - A porcentagem de pessoas em cada faixa etária
 
-    Faixas etárias:
-    1ª: Até 15 anos
-    2ª: De 16 a 30 anos
-    3ª: De 31 a 45 anos
-    4ª: De 46 a 60 anos
-    5ª: Acima de 61 anos
-    */
+  Faixas etárias:
+  1ª: Até 15 anos
+  2ª: De 16 a 30 anos
+  3ª: De 31 a 45 anos
+  4ª: De 46 a 60 anos
+  5ª: Acima de 61 anos
+  */
 
-    //ENTRADA
-    let lista1 = [];
-    let lista2 = [];
-    let lista3 = [];
-    let lista4 = [];
-    let lista5 = [];
+  //ENTRADA
+  let lista1 = [];
+  let lista2 = [];
+  let lista3 = [];
+  let lista4 = [];
+  let lista5 = [];
 
 
-    //PROCESSAMENTO
-    for (let controle = 1; controle <= 10; controle++) {
-        let idade = Number(prompt("informe a idade"))
-        let listaIdade = [];
+  //PROCESSAMENTO
+  for (let controle = 1; controle <= 10; controle++) {
+    let idade = Number(prompt("informe a idade"))
+    let listaIdade = [];
 
-        if (idade <= 15){
-        lista1.push(idade);
+    if (idade <= 15) {
+      lista1.push(idade);
     }
-    
 
-    else if (idade <= 30){
+
+    else if (idade <= 30) {
       lista2.push(idade);
     }
-    else if (idade <= 45){
+    else if (idade <= 45) {
       lista3.push(idade);
     }
-    else if (idade <= 60){
+    else if (idade <= 60) {
       lista4.push(idade);
     }
     else {
-        lista5.push(idade);
+      lista5.push(idade);
     }
-}
+  }
 
 
-    
-    
 
 
-    
-    //SAÍDA
-    document.write(`A quantidade de pessoas em cada faixa etária: <br> ${lista1.length} pessoas com Até 15 anos, seu percentual ${(lista1.length* 10)}% <br> ${lista2.length} pessoas  De 16 a 30 anos, seu percentual ${(lista2.length* 10)}%  <br> ${lista3.length} pessoas De 31 a 45 anos, seu percentual ${(lista3.length* 10)}% <br>  ${lista4.length} pessoas De 46 a 60 anos, seu percentual ${(lista4.length* 10)}% <br> ${lista5.length} pessoas  Acima de 61 anos, seu percentual ${(lista5.length* 10)}%  `)
+
+
+
+  //SAÍDA
+  document.write(`A quantidade de pessoas em cada faixa etária: <br>
+     ${lista1.length} pessoas com Até 15 anos, seu percentual ${(lista1.length * 10)}% <br>
+      ${lista2.length} pessoas  De 16 a 30 anos, seu percentual ${(lista2.length * 10)}%  <br>
+       ${lista3.length} pessoas De 31 a 45 anos, seu percentual ${(lista3.length * 10)}% <br> 
+        ${lista4.length} pessoas De 46 a 60 anos, seu percentual ${(lista4.length * 10)}% <br>
+         ${lista5.length} pessoas  Acima de 61 anos, seu percentual ${(lista5.length * 10)}%  `)
 
 </script>
