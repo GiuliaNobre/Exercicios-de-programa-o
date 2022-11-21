@@ -1,0 +1,23 @@
+<script>
+    //PROBLEMA
+    /*
+    Desenvolva um programa que pergunte ao usuário a quantidade de pessoas que terão sua medida informada.
+    Após, calcule e apresente os seguintes dados:
+    - Menor altura 
+    - Maior altura
+    */
+
+    //ENTRADA
+    const quantidadePessoas = Number(prompt("Informe a quantidade de pessoas que terão sua medida informada"));
+    let listaAltura = [];
+
+    //PROCESSAMENTO
+for (let contador = 1; contador <= quantidadePessoas; contador++) {
+  listaAltura.push(Number(prompt("informe sua altura")))
+    
+}
+
+    
+    //SAÍDA
+    document.write(` Maior altura: ${listaAltura.reverse((a, b) => b-a).join(", ")} <br> Menor altura: ${listaAltura.sort((a, b) => a - b).join(", ")} `)
+</script>
