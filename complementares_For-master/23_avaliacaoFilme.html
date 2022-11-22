@@ -32,23 +32,20 @@
 
     }
     
-    for(var i = 0; i < listaRegular.length; i++) {
-    soma =+ listaRegular[i];
-}
 
-for(var i = 0; i < listabom.length; i++) {
-    soma2 = listaBom[i] + listaBom[i]
-}
-
-    const mediaIdadeTodos = (soma + soma2) / resposta;
-    const mediaIdadeRegular = soma / resposta;
-    const mediaIdadeBom = soma2 / resposta;
+    const mediaIdadeTodos = (listaRegular + listabom) / resposta;
+    const mediaIdadeRegular = listaRegular / resposta;
+    const mediaIdadeBom = listabom / resposta;
 
    
 
-    const percentual1 = (100 * soma) / resposta.length
-    const percentual2 = (100 * soma2) / resposta.lenght
+    const percentual1 = (100 * listaRegular.length) / resposta.length
+    const percentual2 = (100 * listabom.length) / resposta.length
 
     //SAÍDA
-document.write(percentual1)
+document.write(` A média de idade das pessoas que responderam que o filme era REGULAR: ${mediaIdadeRegular}
+ <br> A média de idade das pessoas que responderam que o filme era BOM ${mediaIdadeBom}
+ <br> A média de idade de todas as pessoas que assistiram ao filme ${mediaIdadeTodos}
+ <br>  O percentual de pessoas que classificou o filme como REGULAR ${percentual1}
+ <br> O percentual de pessoas que classificou o filme como BOM ${percentual2}`)
 </script>

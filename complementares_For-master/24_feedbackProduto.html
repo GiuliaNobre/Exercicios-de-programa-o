@@ -11,11 +11,54 @@
     */
 
     //ENTRADA
+ let listaMulheres = [];
+ let listaHomens = [];
+ let listaMulheres2 = [];
+ let listaHomens2 = [];
+ let sim = [];
+ let nao = [];
 
 
     //PROCESSAMENTO
+for (let index = 0; index < 10; index++) {
+    let responder = prompt("informe se o produto atendeu as suas expectativas (S-Sim ou N-N").toUpperCase();
+
+
+if (responder === "S") {
+    sim.push(responder);
+    let genero = prompt("informe o genero (M-Masculino ou F-Feminino)");
+    if(genero === "F"){
+    listaMulheres.push(genero);
+}
+    else {
+    listaHomens.push(genero);
+    }
+
+}
+
+else{
+    nao.push(responder);
+    let genero = prompt("informe o genero (M-Masculino ou F-Feminino)");
+    if(genero === "F"){
+    listaMulheres2.push(genero);
+}
+    else {
+    listaHomens2.push(genero);
+
+    }
+
+}
+}
+
+const percentual = (100 * listaHomens2.length)/ listaHomens.length
 
     
+    
     //SAÍDA
+    document.write(`Número de pessoas que respondeu sim: ${sim.length}
+    <br> Número de pessoas que respondeu não: ${nao.length}
+    <br> Número de mulheres que respondeu sim ${listaMulheres.length}
+    <br> Percentual de homens que responderam não entre todos os homens analisados ${percentual}
+     `)
 
 </script>
