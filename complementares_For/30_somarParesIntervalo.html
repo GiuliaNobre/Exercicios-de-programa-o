@@ -1,0 +1,39 @@
+<script>
+    //PROBLEMA
+    /*
+    Desenvolva um programa que pergunte ao usuário o limite inferior e o limite superior.
+    Imprima todos os números pares que estão neste intervalo e calcule a soma desses números.
+    Por exemplo:
+    - Limite inferior: 3
+    - Limite superior: 12
+    - Saída: 4, 6, 8, 10
+    - Soma: 28
+    */
+
+    //ENTRADA
+let limiteI = Number(prompt("Informe o limite inferior"));
+let limiteS = Number(prompt("Informe o limite superior"));
+let listaPares = [];
+let listaImpares = [];
+let numero = 0;
+let soma = 0;
+
+    //PROCESSAMENTO
+for (let contador = limiteI; contador < limiteS; contador++) {
+    numero = limiteI++
+    if (numero % 2 == 0) {
+        listaPares.push(numero);
+    }
+    else {
+        listaImpares.push(numero);
+    }
+}
+
+for (var i = 0; i < listaPares.length; i++) {
+    soma += listaPares[i];
+    
+}
+    
+    //SAÍDA
+document.write(`Limite inicial: ${limiteI} <br> Limite final: ${limiteS} <br> Saída: ${listaPares.join(", ")} <br> Soma: ${soma}`)
+</script>
